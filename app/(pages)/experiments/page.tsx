@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import Container from '../components/Layout/Container/Container'
+import Container from '@/app/components/Layout/Container/Container'
 
 export default function Experiments() {
   return (

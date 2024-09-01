@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
-import './globals.css'
-import { cn } from './utils/cn'
+import '../globals.css'
+import BackgroundHoverEffect from '../components/Misc/BackgroundHoverEffect/BackgroundHoverEffect'
 
 export const metadata: Metadata = {
   title: 'Iwan Francis | Web Developer',
@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={GeistSans.className}>
+        <BackgroundHoverEffect />
+        <div className="relative z-50">{children}</div>
+      </body>
     </html>
   )
 }
