@@ -10,7 +10,7 @@ html {
 }
 
 @layer utilities {
-  .bg-hover-effect {
+  .bg-hover-effect-overlay {
     position: fixed;
     z-index: 10;
     pointer-events: none;
@@ -21,6 +21,9 @@ html {
     transform-origin: center;
     background-color: #f8fafc;
     opacity: 0.8;
+  }
+
+  .bg-hover-effect-mask {
     -webkit-mask-image: radial-gradient(
       200px at 50% 50%,
       transparent 50%,
