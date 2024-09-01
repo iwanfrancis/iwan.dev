@@ -11,7 +11,7 @@ export default function Home() {
         Iwan Francis
       </h1>
 
-      <p className="mx-10 bg-slate-50 px-6 pb-4 text-lg">
+      <p className="bg-slate-50 px-6 py-4 text-lg md:mx-10">
         Hi! I&apos;m Iwan Francis, a technical lead at&nbsp;
         <a href="https://www.apadmi.com/" className="link">
           Apadmi

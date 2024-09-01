@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-size: 30px 30px;
-  background-color: #f8fafc;
-  background-image: radial-gradient(circle, #525252 1px, rgba(0, 0, 0, 0) 1px);
-  @apply text-stone-900;
-}
-
 @layer base {
+  html {
+    background-size: 30px 30px;
+    background-image: radial-gradient(
+      circle,
+      #525252 1px,
+      rgba(0, 0, 0, 0) 1px
+    );
+    @apply text-stone-900 bg-slate-50;
+  }
+
   *:focus {
     @apply outline-none ring-2 ring-yellow-500 ring-offset-2 transition-shadow;
   }
