@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
+import { Josefin_Sans } from 'next/font/google'
 import '../globals.css'
 import BackgroundHoverEffect from '../components/Misc/BackgroundHoverEffect/BackgroundHoverEffect'
 
@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: 'Personal site for Iwan Francis',
 }
 
+const font = Josefin_Sans({ subsets: ['latin'] })
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>
+      <body className={font.className}>
         <BackgroundHoverEffect />
         <div className="relative z-50">{children}</div>
       </body>

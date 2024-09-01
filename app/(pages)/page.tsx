@@ -6,13 +6,11 @@ export default function Home() {
     <Container
       as="main"
       rootClassName="min-h-screen py-16 flex flex-col justify-center items-stretch"
-      className="flex min-h-[60vh] w-full flex-col items-center gap-y-4 rounded-lg bg-white p-8 text-center shadow-2xl"
+      className="flex min-h-[60vh] w-full flex-col items-center gap-y-4 rounded-lg bg-slate-50 p-8 text-center shadow-lg"
     >
-      <h1 className="text-4xl sm:text-5xl md:text-6xl">Iwan Francis</h1>
-      <nav className="flex gap-4">
-        <Link href="/cv">CV</Link>
-        <Link href="/experiments">Experiments</Link>
-      </nav>
+      <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl">
+        Iwan Francis
+      </h1>
     </Container>
   )
 }
