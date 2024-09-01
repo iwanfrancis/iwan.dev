@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
-import { Source_Code_Pro } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
 import './globals.css'
 import { cn } from './utils/cn'
-
-const sourceCodeProFont = Source_Code_Pro({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Iwan Francis | Web Developer',
@@ -17,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(sourceCodeProFont.className, 'bg-gray-100')}>
-        {children}
-      </body>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   )
 }
