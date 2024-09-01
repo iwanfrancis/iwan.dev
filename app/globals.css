@@ -9,6 +9,18 @@ html {
   @apply text-stone-900;
 }
 
+@layer base {
+  *:focus {
+    @apply outline-none ring-2 ring-yellow-500 ring-offset-2 transition-shadow;
+  }
+}
+
+@layer components {
+  .link {
+    @apply font-bold underline rounded-sm hover:decoration-2;
+  }
+}
+
 @layer utilities {
   .bg-hover-effect-overlay {
     position: fixed;

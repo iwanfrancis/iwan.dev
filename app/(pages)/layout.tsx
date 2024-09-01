@@ -4,8 +4,7 @@ import '../globals.css'
 import BackgroundHoverEffect from '../components/Misc/BackgroundHoverEffect/BackgroundHoverEffect'
 
 export const metadata: Metadata = {
-  title: 'Iwan Francis | Web Developer',
-  description: 'Personal site for Iwan Francis',
+  title: 'Iwan Francis',
 }
 
 const font = Josefin_Sans({ subsets: ['latin'] })
